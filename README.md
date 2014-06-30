@@ -4,22 +4,22 @@ Prepare image which is installed muliple versions of ruby and bundler for each v
 
 ## Usage
 
-You can use this image for your project soon. It's uploaded docker.io, [tcnksm/rbenv](https://index.docker.io/u/tcnksm/rbenv/).
+You can use this image for your project soon. It's uploaded docker.io, [5t111111/rbenv](https://index.docker.io/u/5t111111/rbenv/).
 
 ```
-docker pull tcnksm/rbenv
+docker pull 5t111111/rbenv
 ```
 
 or in Dockerfile
 
 ```
-FROM tcnksm/rbenv
+FROM 5t111111/rbenv
 ```
 
 Run it !
 
 ```
-docker run -i -t tcnksm/rbenv bash -l -c 'rbenv global 2.0.0-p353; bundle ...'
+docker run -i -t 5t111111/rbenv bash -l -c 'rbenv global 2.1.2; bundle ...'
 ```
 
 
@@ -37,11 +37,11 @@ docker build -t TAG .
 Dockerfile execute belows;
 
 1. Pull base image (this time ubuntu)
-1. Install packages which are needed to build ruby
-1. Clone [rbenv](https://github.com/sstephenson/rbenv)
-1. Clone [ruby-build](https://github.com/sstephenson/ruby-build)
-1. Install multiple versions of ruby which are defined at `versions.txt`
-1. Install Bundler for each version
+2. Install packages which are needed to build ruby
+3. Clone [rbenv](https://github.com/sstephenson/rbenv)
+4. Clone [ruby-build](https://github.com/sstephenson/ruby-build)
+5. Install multiple versions of ruby which are defined at `versions.txt`
+6. Install Bundler for each version
 
 ## Original Author
 
