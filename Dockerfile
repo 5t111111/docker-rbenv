@@ -1,6 +1,6 @@
 FROM base
 
-MAINTAINER tcnksm "https://github.com/tcnksm"
+MAINTAINER 5t111111 "https://github.com/5t111111"
 
 # Install packages for building ruby
 RUN apt-get update

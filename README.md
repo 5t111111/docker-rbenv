@@ -27,24 +27,6 @@ docker run -i -t tcnksm/rbenv bash -l -c 'rbenv global 2.0.0-p353; bundle ...'
 
 Install multiple versions of ruby by [rbenv](https://github.com/sstephenson/rbenv). you can define ruby verion which you want to use in `versions.txt`.
 
-### OS X
-
-Use Vagrant for VM running docker. Vagrant 1.4 has a Docker provisioner.
-Download it [here](http://www.vagrantup.com/downloads.html).
-
-After installed.
-
-```
-vagrant up
-```
-
-And login to VM.
-
-```
-vagrant ssh
-```
-
-Now you can use docker in VM.
 
 ### Build image
 
@@ -61,11 +43,6 @@ Dockerfile execute belows;
 1. Install multiple versions of ruby which are defined at `versions.txt`
 1. Install Bundler for each version
 
-## Reference
-
-- [docker-plenv-vanilla](https://github.com/miyagawa/docker-plenv-vanilla)
-- [Using Docker and Vagrant on Mac OS X with a Ruby on Rails application](http://blog.powpark.com/2013/11/11/using-docker-and-vagrant-on-mac-osx-for-a-ruby-on-rails-app/)
-
-## Author
+## Original Author
 
 [tcnksm](https://twitter.com/deeeet)
