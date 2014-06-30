@@ -5,7 +5,8 @@ MAINTAINER 5t111111 "https://github.com/5t111111"
 # Install packages for building ruby
 RUN apt-get update
 RUN apt-get install -qqy --force-yes build-essential curl git subversion
-RUN apt-get install -qqy --force-yes zlib1g-dev libssl-dev libreadline-dev libyaml-dev libxml2-dev libxslt-dev
+RUN apt-get install -qqy --force-yes autoconf bison build-essential libssl-dev \
+libyaml-dev libreadline6 libreadline6-dev zlib1g zlib1g-dev
 RUN apt-get clean
 
 # Install rbenv and ruby-build
